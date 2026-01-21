@@ -1,0 +1,24 @@
+{
+  "name": "aura-protocol",
+  "version": "1.0.0",
+  "description": "AURA - Operating System for Autonomous On-Chain Economy",
+  "private": true,
+  "workspaces": [
+    "packages/contracts",
+    "packages/backend",
+    "packages/mcp-server",
+    "packages/frontend",
+    "packages/sdk"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm install -w packages/contracts && npm install -w packages/backend && npm install -w packages/mcp-server && npm install -w packages/frontend && npm install -w packages/sdk",
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "test": "npm run test --workspaces",
+    "deploy": "npm run deploy -w packages/contracts",
+    "start:backend": "npm run start -w packages/backend",
+    "start:mcp": "npm run start -w packages/mcp-server",
+    "start:frontend": "npm run dev -w packages/frontend",
+    "docs": "echo 'See docs/ folder for documentation'"
+  }
+}
