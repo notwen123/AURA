@@ -1,0 +1,21 @@
+{
+    "name": "aura-backend",
+    "version": "1.0.0",
+    "description": "Backend for AURA",
+    "main": "dist/server.js",
+    "scripts": {
+        "start": "node dist/server.js",
+        "dev": "ts-node src/server.ts",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "express": "^4.18.2",
+        "ethers": "^6.0.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.17",
+        "@types/node": "^20.0.0",
+        "typescript": "^5.0.0",
+        "ts-node": "^10.9.1"
+    }
+}
